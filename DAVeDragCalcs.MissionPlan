@@ -88,7 +88,9 @@
         <DLLPath>C:\Program Files\MATLAB\R2018a\bin\win64</DLLPath>
         <SharedInstanceFlag>false</SharedInstanceFlag>
         <ScriptExecutionLog></ScriptExecutionLog>
-        <AdditionalSearchPaths dim="0" />
+        <AdditionalSearchPaths dim="1">
+          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission</value>
+        </AdditionalSearchPaths>
         <metadata dim="0" />
       </MatlabInterface>
     </Object>
@@ -104,17 +106,17 @@
         </EpochDetails>
         <Epoch>Jan 01 2020 00:00:00.000000000</Epoch>
         <ReferenceFrame>Mean of J2000 Earth Equator</ReferenceFrame>
-        <CentralBody>Earth</CentralBody>
-        <ElementType>Cartesian</ElementType>
+        <CentralBody>Mars</CentralBody>
+        <ElementType>Keplerian</ElementType>
         <OrbitState>
-          <Cartesian>
-            <X units="km" displayed_units="km">-3410.673</X>
-            <Y units="km" displayed_units="km">5950.957</Y>
-            <Z units="km" displayed_units="km">-1788.627</Z>
-            <VX units="km/s" displayed_units="km/s">1.893006</VX>
-            <VY units="km/s" displayed_units="km/s">-1.071993</VY>
-            <VZ units="km/s" displayed_units="km/s">-7.176346</VZ>
-          </Cartesian>
+          <Keplerian>
+            <A units="km" displayed_units="km">5640</A>
+            <E units="" displayed_units="">.305</E>
+            <I units="deg" displayed_units="deg">0</I>
+            <RAAN units="deg" displayed_units="deg">0</RAAN>
+            <W units="deg" displayed_units="deg">0</W>
+            <TA units="deg" displayed_units="deg">180</TA>
+          </Keplerian>
         </OrbitState>
         <Orientation>
           <AttitudeCoordinateSystem />
@@ -144,13 +146,13 @@
           <DragCoeffType>0</DragCoeffType>
           <DragCoefficientTypes>
             <UseCd>
-              <Cd units="" displayed_units="">2.2</Cd>
+              <Cd units="" displayed_units="">1</Cd>
             </UseCd>
           </DragCoefficientTypes>
           <Cr units="" displayed_units="">1.4</Cr>
-          <Cl units="" displayed_units="">1.2</Cl>
-          <DragArea units="m^2" displayed_units="m^2">1.0</DragArea>
-          <LiftArea units="m^2" displayed_units="m^2">1.0</LiftArea>
+          <Cl units="" displayed_units="">1</Cl>
+          <DragArea units="m^2" displayed_units="m^2">74.8899</DragArea>
+          <LiftArea units="m^2" displayed_units="m^2">74.8899</LiftArea>
           <SRPArea units="m^2" displayed_units="m^2">1.0</SRPArea>
           <SatelliteId>1</SatelliteId>
         </PhysicalProperties>
@@ -181,7 +183,7 @@
           <LCSLatitude units="deg" displayed_units="deg">0.0</LCSLatitude>
         </LaunchCoordinates>
         <InertialData>
-          <VehicleDryMass units="kg" displayed_units="kg">1000.0</VehicleDryMass>
+          <VehicleDryMass units="kg" displayed_units="kg">37962</VehicleDryMass>
           <VehicleDryMOI units="kg m^2" displayed_units="kg m^2" dim="3,3">
             <value>1200</value>
             <value>0</value>
@@ -194,7 +196,7 @@
             <value>1200</value>
           </VehicleDryMOI>
           <MassTotal units="kg" displayed_units="kg">1990.18</MassTotal>
-          <VehicleDryCenterOfGravity units="m" displayed_units="m" dim="(3)">
+          <VehicleDryCenterOfGravity units="m" displayed_units="m" dim="3">
             <value>0</value>
             <value>0</value>
             <value>0</value>
@@ -211,7 +213,7 @@
             <Prop>
               <RK89 name="DAVe_Propagator" isConstant="false" isGlobal="false">
                 <Name>DAVe_Propagator</Name>
-                <StepSize units="s" displayed_units="s">300</StepSize>
+                <StepSize units="s" displayed_units="s">30</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -224,7 +226,7 @@
                   <ForceModel name="DAVe_ForceModel" isConstant="false" isGlobal="false">
                     <Name>DAVe_ForceModel</Name>
                     <GravitatingBodies>
-                      <CelestialObjects dim="(11)">
+                      <CelestialObjects dim="11">
                         <value>Mercury</value>
                         <value>Venus</value>
                         <value>Earth</value>
@@ -237,11 +239,11 @@
                         <value>Moon</value>
                         <value>Sun</value>
                       </CelestialObjects>
-                      <UseBodyForce dim="(11)">
+                      <UseBodyForce dim="11">
                         <value>false</value>
                         <value>false</value>
                         <value>true</value>
-                        <value>false</value>
+                        <value>true</value>
                         <value>false</value>
                         <value>false</value>
                         <value>false</value>
@@ -250,7 +252,7 @@
                         <value>true</value>
                         <value>true</value>
                       </UseBodyForce>
-                      <PlanetFieldType units="" displayed_units="" dim="(11)">
+                      <PlanetFieldType units="" displayed_units="" dim="11">
                         <value>0</value>
                         <value>0</value>
                         <value>2</value>
@@ -263,7 +265,7 @@
                         <value>0</value>
                         <value>0</value>
                       </PlanetFieldType>
-                      <PlanetFieldDegree units="" displayed_units="" dim="(11)">
+                      <PlanetFieldDegree units="" displayed_units="" dim="11">
                         <value>0</value>
                         <value>0</value>
                         <value>4</value>
@@ -276,7 +278,7 @@
                         <value>0</value>
                         <value>0</value>
                       </PlanetFieldDegree>
-                      <PlanetFieldOrder units="" displayed_units="" dim="(11)">
+                      <PlanetFieldOrder units="" displayed_units="" dim="11">
                         <value>0</value>
                         <value>0</value>
                         <value>4</value>
@@ -289,7 +291,7 @@
                         <value>0</value>
                         <value>0</value>
                       </PlanetFieldOrder>
-                      <PlanetoPotentialFilename dim="(11)">
+                      <PlanetoPotentialFilename dim="11">
                         <value></value>
                         <value></value>
                         <value>DEFAULT</value>
@@ -302,7 +304,7 @@
                         <value></value>
                         <value></value>
                       </PlanetoPotentialFilename>
-                      <SolidTideFilename dim="(11)">
+                      <SolidTideFilename dim="11">
                         <value></value>
                         <value></value>
                         <value>DEFAULT</value>
@@ -315,7 +317,7 @@
                         <value></value>
                         <value></value>
                       </SolidTideFilename>
-                      <UseZeroTideModel dim="(11)">
+                      <UseZeroTideModel dim="11">
                         <value>false</value>
                         <value>false</value>
                         <value>false</value>
@@ -328,7 +330,7 @@
                         <value>false</value>
                         <value>false</value>
                       </UseZeroTideModel>
-                      <SolidTideDegree units="" displayed_units="" dim="(11)">
+                      <SolidTideDegree units="" displayed_units="" dim="11">
                         <value>0</value>
                         <value>0</value>
                         <value>2</value>
@@ -341,7 +343,7 @@
                         <value>0</value>
                         <value>0</value>
                       </SolidTideDegree>
-                      <SolidTideOrder units="" displayed_units="" dim="(11)">
+                      <SolidTideOrder units="" displayed_units="" dim="11">
                         <value>0</value>
                         <value>0</value>
                         <value>2</value>
@@ -673,6 +675,473 @@
         <metadata dim="0" />
       </Spacecraft>
     </Object>
+    <Object>
+      <ImpulsiveBurn name="deorbitBurn" isConstant="false" isGlobal="false">
+        <Name>deorbitBurn</Name>
+        <AttitudeSystem>1</AttitudeSystem>
+        <BurnDirection units="km/s" displayed_units="km/s" dim="3">
+          <value>-.1</value>
+          <value>0</value>
+          <value>0</value>
+        </BurnDirection>
+        <SpecificImpulse units="s" displayed_units="s">220.0</SpecificImpulse>
+        <ManeuverGravityConstant units="m/s^2" displayed_units="m/s^2">9.81</ManeuverGravityConstant>
+        <ManeuverStartTime units="s" displayed_units="s">0.0</ManeuverStartTime>
+        <ThrustScaleFactor units="" displayed_units="">1.0</ThrustScaleFactor>
+        <DeltaVOffsetDeltaX units="" displayed_units="">0.0</DeltaVOffsetDeltaX>
+        <DeltaVOffsetDeltaY units="" displayed_units="">0.0</DeltaVOffsetDeltaY>
+        <DeltaVScaleFactor units="" displayed_units="">1.0</DeltaVScaleFactor>
+        <OD>
+          <ImpulsiveBurnODProperties name="deorbitBurn_|ImpulsiveBurnODProperties|" isConstant="false" isGlobal="false">
+            <Name>deorbitBurn_|ImpulsiveBurnODProperties|</Name>
+            <DeltaVOffsetDeltaX>
+              <EstimableCoefficient name="deorbitBurn_|OD_DeltaVOffsetDeltaX|" isConstant="false" isGlobal="false">
+                <Name>deorbitBurn_|OD_DeltaVOffsetDeltaX|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </DeltaVOffsetDeltaX>
+            <DeltaVOffsetDeltaY>
+              <EstimableCoefficient name="deorbitBurn_|OD_DeltaVOffsetDeltaY|" isConstant="false" isGlobal="false">
+                <Name>deorbitBurn_|OD_DeltaVOffsetDeltaY|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </DeltaVOffsetDeltaY>
+            <DeltaVScaleFactor>
+              <EstimableCoefficient name="deorbitBurn_|OD_DeltaVScaleFactor|" isConstant="false" isGlobal="false">
+                <Name>deorbitBurn_|OD_DeltaVScaleFactor|</Name>
+                <ProcessAction>0</ProcessAction>
+                <Sigma units="" displayed_units="">0.05</Sigma>
+                <ProcessNoise units="" displayed_units="">1e-9</ProcessNoise>
+                <metadata dim="0" />
+              </EstimableCoefficient>
+            </DeltaVScaleFactor>
+            <metadata dim="0" />
+          </ImpulsiveBurnODProperties>
+        </OD>
+        <metadata dim="0" />
+      </ImpulsiveBurn>
+    </Object>
+    <Object>
+      <ViewWindow name="ViewWindow1" isConstant="false" isGlobal="false">
+        <Name>ViewWindow1</Name>
+        <WindowTitle></WindowTitle>
+        <Viewpoints dim="1">
+          <value>
+            <Viewpoint name="ViewWindow1_Default" isConstant="false" isGlobal="false">
+              <Name>ViewWindow1_Default</Name>
+              <ViewpointName>Default</ViewpointName>
+              <ViewpointType>view</ViewpointType>
+              <ViewpointParameters>
+                <view>
+                  <ThreeDView>
+                    <ThreeDViewpointOptions name="ViewWindow1_Default_|ThreeDView|" isConstant="false" isGlobal="false">
+                      <Name>ViewWindow1_Default_|ThreeDView|</Name>
+                      <Source>Mars</Source>
+                      <Target>Mars</Target>
+                      <TailReference>Mars</TailReference>
+                      <ReferenceFrame>inertial</ReferenceFrame>
+                      <Declination units="deg" displayed_units="deg">20.0</Declination>
+                      <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
+                      <Radius units="km" displayed_units="km">30000.0</Radius>
+                      <RightAscension units="deg" displayed_units="deg">270.0</RightAscension>
+                      <metadata dim="0" />
+                    </ThreeDViewpointOptions>
+                  </ThreeDView>
+                </view>
+              </ViewpointParameters>
+              <metadata dim="0" />
+            </Viewpoint>
+          </value>
+        </Viewpoints>
+        <UseLighting>true</UseLighting>
+        <UseTextures>true</UseTextures>
+        <ShowLogo>true</ShowLogo>
+        <LogoTextureFilename></LogoTextureFilename>
+        <ShowStatusText>true</ShowStatusText>
+        <ShowTextBackdrops>true</ShowTextBackdrops>
+        <AmbientColor>6710886</AmbientColor>
+        <StatusTextColor>16777215</StatusTextColor>
+        <BackgroundColor>0</BackgroundColor>
+        <ObjectShadowing>0</ObjectShadowing>
+        <StatusTextFont>
+          <ViewFont name="ViewWindow1_|StatusTextFont|" isConstant="false" isGlobal="false">
+            <Name>ViewWindow1_|StatusTextFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">0.0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </StatusTextFont>
+        <DefaultObjectLabelFont>
+          <ViewFont name="ViewWindow1_|DefaultObjectLabelFont|" isConstant="false" isGlobal="false">
+            <Name>ViewWindow1_|DefaultObjectLabelFont|</Name>
+            <Bold>false</Bold>
+            <Italic>false</Italic>
+            <Size units="" displayed_units="">20.0</Size>
+            <Strikeout>false</Strikeout>
+            <Typeface>Tahoma</Typeface>
+            <Underline>false</Underline>
+            <metadata dim="0" />
+          </ViewFont>
+        </DefaultObjectLabelFont>
+        <Objects dim="13">
+          <value>Mercury</value>
+          <value>Venus</value>
+          <value>Earth</value>
+          <value>Moon</value>
+          <value>Mars</value>
+          <value>Jupiter</value>
+          <value>Saturn</value>
+          <value>Uranus</value>
+          <value>Neptune</value>
+          <value>Pluto</value>
+          <value>Sun</value>
+          <value>Stars</value>
+          <value>DAVe</value>
+        </Objects>
+        <ProjectionHeights units="km" displayed_units="km" dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>800</value>
+        </ProjectionHeights>
+        <ShowObject dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowObject>
+        <ShowBody dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </ShowBody>
+        <ShowName dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowName>
+        <ShowGrid dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowGrid>
+        <ShowAxes dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowAxes>
+        <ShowHistory dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+        </ShowHistory>
+        <ShowIcon dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </ShowIcon>
+        <IconImageFilename dim="13">
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+          <value></value>
+        </IconImageFilename>
+        <IconSize units="pixel" displayed_units="pixel" dim="13">
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30.0</value>
+          <value>30</value>
+        </IconSize>
+        <IconDrawingMode dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </IconDrawingMode>
+        <IconColor dim="13">
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+          <value>4294967295</value>
+        </IconColor>
+        <StoreVelocity dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+        </StoreVelocity>
+        <AxesScaleMode dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </AxesScaleMode>
+        <AxesSize units="km" displayed_units="km" dim="13">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+        </AxesSize>
+        <AxesScale units="" displayed_units="" dim="13">
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+          <value>1.3</value>
+        </AxesScale>
+        <TailLength units="" displayed_units="" dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>100</value>
+        </TailLength>
+        <HistoryMode units="" displayed_units="" dim="13">
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>0</value>
+          <value>1</value>
+        </HistoryMode>
+        <CurrentTailState units="" displayed_units="" dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </CurrentTailState>
+        <LineWidthUnits units="" displayed_units="" dim="13">
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+          <value>1</value>
+        </LineWidthUnits>
+        <LineWidths units="" displayed_units="" dim="13">
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1.0</value>
+          <value>1</value>
+        </LineWidths>
+        <LabelFonts dim="13">
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+          <value xsi:nil="true" />
+        </LabelFonts>
+        <MouseInteractionEnabled>true</MouseInteractionEnabled>
+        <metadata dim="0" />
+      </ViewWindow>
+    </Object>
   </ProjectObjects>
   <ProjectMissionSequence>
     <ProjectExternals />
@@ -682,21 +1151,67 @@
         <Bookmarks />
         <Breakpoints />
         <FreeFormScript><![CDATA[Variable M;
-Variable D;
+Array D;
+Variable d;
 Variable v;
 Variable h;
-v = DAVe.Velocity.Norm();
-h = DAVe.Height;
-Call MatlabInterface1.mach_at_alt(h,v,D,M);]]></FreeFormScript>
+Variable rho;
+Array V;
+Alias fm = (DAVe.Propagator AsType RK89).ForceModel;
+fm.UseOtherAcceleration = 1;
+Open MatlabInterface1;
+Maneuver DAVe using deorbitBurn;
+
+
+While (DAVe.Height > 0);
+	
+	v = DAVe.Velocity.Norm();
+	h = DAVe.Height;
+	V = DAVe.Velocity;
+	Call MatlabInterface1.dragCalcs(h,v,V,d,D,M,rho);
+	fm.OtherAccelerations[0] = D[0]/DAVe.Mass;
+	fm.OtherAccelerations[1] = D[1]/DAVe.Mass;
+	fm.OtherAccelerations[2] = D[2]/DAVe.Mass;
+	Report D, rho, V;
+	Plot DAVe.ElapsedTime, v;
+	Plot h,D.Norm/DAVe.Mass;
+	Update ViewWindow1;
+	
+	Step DAVe;
+End;
+Close MatlabInterface1;]]></FreeFormScript>
       </FreeForm>
     </ProjectCommands>
   </ProjectMissionSequence>
   <ProjectScript><![CDATA[Variable M;
-Variable D;
+Array D;
+Variable d;
 Variable v;
 Variable h;
-v = DAVe.Velocity.Norm();
-h = DAVe.Height;
-Call MatlabInterface1.mach_at_alt(h,v,D,M);]]></ProjectScript>
+Variable rho;
+Array V;
+Alias fm = (DAVe.Propagator AsType RK89).ForceModel;
+fm.UseOtherAcceleration = 1;
+Open MatlabInterface1;
+Maneuver DAVe using deorbitBurn;
+
+
+While (DAVe.Height > 0);
+	
+	v = DAVe.Velocity.Norm();
+	h = DAVe.Height;
+	V = DAVe.Velocity;
+	Call MatlabInterface1.dragCalcs(h,v,V,d,D,M,rho);
+	fm.OtherAccelerations[0] = D[0]/DAVe.Mass;
+	fm.OtherAccelerations[1] = D[1]/DAVe.Mass;
+	fm.OtherAccelerations[2] = D[2]/DAVe.Mass;
+	Report D, rho, V;
+	Plot DAVe.ElapsedTime, v;
+	Plot h,D.Norm/DAVe.Mass;
+	Update ViewWindow1;
+	
+	Step DAVe;
+End;
+Close MatlabInterface1;]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
 </FreeFlyerProjectFile>
