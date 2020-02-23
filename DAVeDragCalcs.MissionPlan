@@ -53,7 +53,7 @@
         <COUpdateInterval units="s" displayed_units="s">0</COUpdateInterval>
         <NPUpdateInterval units="s" displayed_units="s">1800</NPUpdateInterval>
         <IonosphereOptions>
-          <IonosphereOptions name="FF_SolarSystem_|ionoOptions|" isConstant="false" isGlobal="false">
+          <IonosphereOptions name="FF_SolarSystem_|ionoOptions|" isConstant="false" isGlobal="true">
             <Name>FF_SolarSystem_|ionoOptions|</Name>
             <MaximumHeight units="km" displayed_units="km">1000</MaximumHeight>
             <MinimumHeight units="km" displayed_units="km">80</MinimumHeight>
@@ -213,7 +213,7 @@
             <Prop>
               <RK89 name="DAVe_Propagator" isConstant="false" isGlobal="false">
                 <Name>DAVe_Propagator</Name>
-                <StepSize units="s" displayed_units="s">30</StepSize>
+                <StepSize units="s" displayed_units="s">1</StepSize>
                 <StepJustTaken units="s" displayed_units="s">300.0</StepJustTaken>
                 <StepToTake units="s" displayed_units="s">300.0</StepToTake>
                 <LargeCurvature units="" displayed_units="">0</LargeCurvature>
@@ -1174,7 +1174,7 @@ While (DAVe.Height > 0);
 	fm.OtherAccelerations[2] = D[2]/DAVe.Mass;
 	Report D, rho, V;
 	Plot DAVe.ElapsedTime, v;
-	Plot h,D.Norm/DAVe.Mass;
+	Plot h,D.Norm;
 	Update ViewWindow1;
 	
 	Step DAVe;
@@ -1207,7 +1207,7 @@ While (DAVe.Height > 0);
 	fm.OtherAccelerations[2] = D[2]/DAVe.Mass;
 	Report D, rho, V;
 	Plot DAVe.ElapsedTime, v;
-	Plot h,D.Norm/DAVe.Mass;
+	Plot h,D.Norm;
 	Update ViewWindow1;
 	
 	Step DAVe;
