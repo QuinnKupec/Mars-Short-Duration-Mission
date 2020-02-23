@@ -1,31 +1,48 @@
-%% Justifications
+%% Justifications Script
+%
 %  Description: Includes back-up calculations to support various design
-%  decisions for CAD parts and respective dimensions (i.e. rover and
-%  cargo-truck wheel dimensions, cargo-truck dimensions)
+%               decisions for CAD parts, respective dimensions (i.e.
+%               rover and supply pod wheel dimensions, supply pod
+%               dimensions) and ultimate stress.
 %  Created by: Cavero, Diego
 %              Shah, Saloni
+%  Created on: 16 February 2020
+%  Edited:     22 February 2020
 
 %% Wheels
 
-% School bus
-d_sb_wh = 36/39.3701;   % m
-m_sb = 29500/2204.62;   % MT
-l_sb = 30/3.28084;      % m
-% Following based on diff. bus - Type C school buses:
-front_overhang_sb = 0.85;   % m
-rear_overhang_sb = 3.7; % m
+% % School bus
+% d_sb_wh = 36/39.3701;   % m
+% m_sb = 29500/2204.62;   % MT
+% l_sb = 30/3.28084;      % m
+% % Following based on diff. bus - Type C school buses:
+% front_overhang_sb = 0.85;   % m
+% rear_overhang_sb = 3.7; % m
+% 
+% % Rover - Wheels
+% l_ro = 6;               % m
+% m_ro = 12;              % MT
+% d_ro_wh = d_sb_wh*m_ro/m_sb % d_ro_wh = 0.8200 m
+% t_ro_wh = 8/21*d_ro_wh  % t_ro_wh = 0.3124 m (8/21 prop. from NASA website
+%                         % on the SMA Spring Tires)
+
+% Based on Mars 2020 Rover
+d_mr = 0.525;   % m
+m_mr = 1.025;   % MT
+l_mr = 3;       % m
 
 % Rover - Wheels
 l_ro = 6;               % m
 m_ro = 12;              % MT
-d_ro_wh = d_sb_wh*m_ro/m_sb % d_ro_wh = 0.8200 m
+d_ro_wh = d_mr*l_ro/l_mr% d_ro_wh = 01.05 m
 t_ro_wh = 8/21*d_ro_wh  % t_ro_wh = 0.3124 m (8/21 prop. from NASA website
                         % on the SMA Spring Tires)
+
 % Supply Pods - Axles Distance
 l_sp = 5;               % m
 m_ro = 5;               % MT
-front_overhang_sp = front_overhang_sb/l_sb*l_sp
-rear_overhang_sp = rear_overhang_sb/l_sb*l_sp
+front_overhang_sp = front_overhang_sb/l_mr*l_sp
+rear_overhang_sp = rear_overhang_sb/l_mr*l_sp
 
 %% ATV
 
