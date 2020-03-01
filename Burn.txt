@@ -1,0 +1,128 @@
+FreeFlyer(tm) Maneuver Summary File
+===================================
+
+
+-----------------------------
+Maneuver 1
+-----------------------------
+
+Maneuver for spacecraft Spacecraft1
+
+Finite maneuver start epoch:
+   Modified Julian: 28849.500000000
+   Calendar:        Jan 01 2020 00:00:00.000
+                    20200101 00:00:00.000
+
+Finite maneuver end epoch:
+   Modified Julian: 28849.779166667
+   Calendar:        Jan 01 2020 06:42:00.000
+                    20200101 06:42:00.000
+
+Maneuver Duration:   24120.000000000 seconds
+
+Maneuver Direction:     Maneuver in velocity-normal-binormal direction:
+    Orbit Velocity directed component = 1.0000000000000
+    Orbit Normal directed component =   0.00000000000000
+    Orbit Binormal directed component = 0.00000000000000
+
+Premaneuver Cartesian State:
+     X      6571.0000000000 km
+     Y      0.00000000000000 km
+     Z      0.00000000000000 km
+    VX      -0.00000000000000 km/s
+    VY      7.7884879849732 km/s
+    VZ      0.00000000000000 km/s
+
+Premaneuver Keplerian State (MJ2000):
+     A      6571.0000000000 km
+     E      2.3426849682331e-16   
+     I      0.00000000000000 deg
+  RAAN      0.00000000000000 deg
+    AP      180.00000000000 deg
+    TA      180.00000000000 deg
+
+Premaneuver Keplerian State (Brouwer-Lyddane J2):
+     A      6571.0306238397 km
+     E      0.0015265026830115   
+     I      0.00000000000000 deg
+  RAAN      0.00000000000000 deg
+    AP      180.00000000000 deg
+    MA      180.00000000000 deg
+
+ Premaneuver mass      378172.00000000 kg
+
+
+Postmaneuver Cartesian State:
+     X      1059.2393417349 km
+     Y      -8653.2083984183 km
+     Z      0.75096263435666 km
+    VX      6.7045116749298 km/s
+    VY      0.70235325074889 km/s
+    VZ      -4.8881802051898e-05 km/s
+
+Postmaneuver Keplerian State (MJ2000):
+     A      8664.9569693301 km
+     E      0.018461530227294   
+     I      0.0049609518173713 deg
+  RAAN      181.17643707585 deg
+    AP      345.51864993687 deg
+    TA      110.28377065127 deg
+
+Postmaneuver Keplerian State (Brouwer-Lyddane J2):
+     A      8665.0644587852 km
+     E      0.018774197962201   
+     I      0.0049630767137128 deg
+  RAAN      181.18379908674 deg
+    AP      343.00709165507 deg
+    MA      110.79109329666 deg
+
+ Postmaneuver mass      341291.26605505 kg
+
+
+Maneuver Thrust Scale Factor:  1.0000000000000
+
+Net delta-V (in the body frame):
+   dVX         1007.2731730212 m/s
+   dVY         0.00000000000000 m/s
+   dVZ         0.00000000000000 m/s
+
+   Magnitude: 1007.2731730212 m/s
+
+
+Fuel Accounting:
+   Starting mass:      378172.00000000 kg
+        End mass:      341291.26605505 kg
+       Mass used:      36880.733944954 kg
+
+
+Hardware data: 
+
+
+Active thruster data:
+
+  Spacecraft1_Thruster1
+
+     TSF:         1.0000000000000
+     Duty Cycle:  1.0000000000000
+     Tank(s):     Spacecraft1_Tank1
+
+
+Active Tank Data:
+
+   Spacecraft1_Tank1
+
+     Premaneuver
+       Temperature:  20.000000000000 C
+       Pressure:     1500.0000000000 kPa
+       Mass:         91928.000000000 kg
+
+     Postmaneuver
+       Temperature:  20.000000000000 C
+       Pressure:     43.565787640588 kPa
+       Mass:         55047.266055046 kg
+
+     Differences
+       Pressure:     1456.4342123594 kPa
+       Mass:         36880.733944954 kg
+
+
