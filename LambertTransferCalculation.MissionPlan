@@ -796,7 +796,7 @@
         </ProjectionHeights>
         <ShowObject dim="13">
           <value>0</value>
-          <value>1</value>
+          <value>0</value>
           <value>1</value>
           <value>0</value>
           <value>1</value>
@@ -912,7 +912,7 @@
           <value></value>
           <value></value>
           <value></value>
-          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission\CAD\DAVe\Images\DAVe, no gear.png</value>
+          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission\Images\TransferVehicleAssemblyIcon.png</value>
         </IconImageFilename>
         <IconSize units="" displayed_units="" dim="13">
           <value>30</value>
@@ -927,7 +927,7 @@
           <value>30</value>
           <value>30</value>
           <value>30</value>
-          <value>25</value>
+          <value>100</value>
         </IconSize>
         <IconDrawingMode dim="13">
           <value>0</value>
