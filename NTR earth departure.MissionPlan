@@ -3195,7 +3195,7 @@
                       <ReferenceFrame>inertial</ReferenceFrame>
                       <Declination units="deg" displayed_units="deg">90</Declination>
                       <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
-                      <Radius units="km" displayed_units="km">310030.188835667</Radius>
+                      <Radius units="km" displayed_units="km">180000</Radius>
                       <RightAscension units="deg" displayed_units="deg">270.0</RightAscension>
                       <metadata dim="0" />
                     </ThreeDViewpointOptions>
@@ -3209,8 +3209,8 @@
         <UseLighting>true</UseLighting>
         <UseTextures>true</UseTextures>
         <ShowLogo>true</ShowLogo>
-        <LogoTextureFilename></LogoTextureFilename>
-        <ShowStatusText>true</ShowStatusText>
+        <LogoTextureFilename>C:\Users\qupec\Downloads\logo.png</LogoTextureFilename>
+        <ShowStatusText>false</ShowStatusText>
         <ShowTextBackdrops>true</ShowTextBackdrops>
         <AmbientColor>6710886</AmbientColor>
         <StatusTextColor>16777215</StatusTextColor>
@@ -3221,7 +3221,7 @@
             <Name>ViewWindow1_|StatusTextFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
-            <Size units="" displayed_units="">0.0</Size>
+            <Size units="" displayed_units="">0</Size>
             <Strikeout>false</Strikeout>
             <Typeface>Tahoma</Typeface>
             <Underline>false</Underline>
@@ -3233,7 +3233,7 @@
             <Name>ViewWindow1_|DefaultObjectLabelFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
-            <Size units="" displayed_units="">20.0</Size>
+            <Size units="" displayed_units="">20</Size>
             <Strikeout>false</Strikeout>
             <Typeface>Tahoma</Typeface>
             <Underline>false</Underline>
@@ -3298,7 +3298,7 @@
           <value>1</value>
           <value>1</value>
           <value>1</value>
-          <value>1</value>
+          <value>0</value>
         </ShowBody>
         <ShowName dim="13">
           <value>1</value>
@@ -3373,7 +3373,7 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>0</value>
+          <value>1</value>
         </ShowIcon>
         <IconImageFilename dim="13">
           <value></value>
@@ -3388,7 +3388,7 @@
           <value></value>
           <value></value>
           <value></value>
-          <value></value>
+          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission\Images\TransferVehicleAssemblyIcon.png</value>
         </IconImageFilename>
         <IconSize units="pixel" displayed_units="pixel" dim="13">
           <value>30.0</value>
@@ -3403,7 +3403,7 @@
           <value>30.0</value>
           <value>30.0</value>
           <value>30.0</value>
-          <value>30</value>
+          <value>100</value>
         </IconSize>
         <IconDrawingMode dim="13">
           <value>0</value>
