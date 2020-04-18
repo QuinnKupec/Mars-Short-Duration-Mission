@@ -3597,12 +3597,6 @@
         <Label>FreeForm</Label>
         <Bookmarks />
         <Breakpoints />
-        <FreeFormScript><![CDATA[]]></FreeFormScript>
-      </FreeForm>
-      <FreeForm enabled="true">
-        <Label>FreeForm</Label>
-        <Bookmarks />
-        <Breakpoints />
         <FreeFormScript><![CDATA[// 3.8 km/s
 
 Variable finalV = 11.58;
@@ -3626,6 +3620,8 @@ Variable inBelt2 = 0;
 Variable beltStartTime;
 Variable beltEndTime;
 Variable totalBeltTime = 0;
+Variable DropMass = 414000;
+Variable stage_count = 1;
 
 beltLower.Color = ColorTools.Cyan;
 beltUpper.Color = ColorTools.Cyan;
@@ -3654,6 +3650,12 @@ While (Spacecraft1.VMag <= finalV);
 	
 	While (Spacecraft1.TA < 356 and Spacecraft1.TA > 4);
 		Spacecraft1.Color = ColorTools.Red;
+		If (Spacecraft1.MassTotal <= DropMass - 60000);
+			Spacecraft1.MassTotal = Spacecraft1.MassTotal - 4300*2;
+			DropMass = Spacecraft1.MassTotal;
+			stage_count = stage_count + 1;
+			Report(stage_count);
+		End;
 		Step Spacecraft1;
 		Step beltLower to (beltLower.Epoch == Spacecraft1.Epoch);
 		Step beltUpper to (beltUpper.Epoch == Spacecraft1.Epoch);
@@ -3693,7 +3695,7 @@ While (Spacecraft1.VMag <= finalV);
 	If ((Spacecraft1.VMag^2/2) > (Earth.Mu/(Spacecraft1.Range(Earth))));
 			
 			Break;
-		End;
+	End;
 		
 End;
 While (Spacecraft1.ElapsedTime < TimeSpan.FromDays(.5));
@@ -3704,8 +3706,7 @@ End;
       </FreeForm>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[
-// 3.8 km/s
+  <ProjectScript><![CDATA[// 3.8 km/s
 
 Variable finalV = 11.58;
 FiniteBurn1.BurnDuration = TimeSpan.FromMinutes(9); //8
@@ -3728,6 +3729,8 @@ Variable inBelt2 = 0;
 Variable beltStartTime;
 Variable beltEndTime;
 Variable totalBeltTime = 0;
+Variable DropMass = 414000;
+Variable stage_count = 1;
 
 beltLower.Color = ColorTools.Cyan;
 beltUpper.Color = ColorTools.Cyan;
@@ -3756,6 +3759,12 @@ While (Spacecraft1.VMag <= finalV);
 	
 	While (Spacecraft1.TA < 356 and Spacecraft1.TA > 4);
 		Spacecraft1.Color = ColorTools.Red;
+		If (Spacecraft1.MassTotal <= DropMass - 60000);
+			Spacecraft1.MassTotal = Spacecraft1.MassTotal - 4300*2;
+			DropMass = Spacecraft1.MassTotal;
+			stage_count = stage_count + 1;
+			Report(stage_count);
+		End;
 		Step Spacecraft1;
 		Step beltLower to (beltLower.Epoch == Spacecraft1.Epoch);
 		Step beltUpper to (beltUpper.Epoch == Spacecraft1.Epoch);
@@ -3795,7 +3804,7 @@ While (Spacecraft1.VMag <= finalV);
 	If ((Spacecraft1.VMag^2/2) > (Earth.Mu/(Spacecraft1.Range(Earth))));
 			
 			Break;
-		End;
+	End;
 		
 End;
 While (Spacecraft1.ElapsedTime < TimeSpan.FromDays(.5));
