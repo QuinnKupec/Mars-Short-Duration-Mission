@@ -733,8 +733,8 @@
         <UseLighting>true</UseLighting>
         <UseTextures>true</UseTextures>
         <ShowLogo>true</ShowLogo>
-        <LogoTextureFilename></LogoTextureFilename>
-        <ShowStatusText>true</ShowStatusText>
+        <LogoTextureFilename>C:\Users\qupec\Downloads\logo.png</LogoTextureFilename>
+        <ShowStatusText>false</ShowStatusText>
         <ShowTextBackdrops>true</ShowTextBackdrops>
         <AmbientColor>6710886</AmbientColor>
         <StatusTextColor>15790320</StatusTextColor>
@@ -912,7 +912,7 @@
           <value></value>
           <value></value>
           <value></value>
-          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission\CAD\DAVe\Images\DAVe, no gear.png</value>
+          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission\Images\TransferVehicleAssemblyIcon.png</value>
         </IconImageFilename>
         <IconSize units="" displayed_units="" dim="13">
           <value>30</value>
@@ -927,7 +927,7 @@
           <value>30</value>
           <value>30</value>
           <value>30</value>
-          <value>25</value>
+          <value>100</value>
         </IconSize>
         <IconDrawingMode dim="13">
           <value>0</value>
@@ -1772,7 +1772,7 @@ Report "  W:    ", 				InterplanetarySC.W<17,2>, " deg" to Console;
 Report "  TA:   ", 				InterplanetarySC.TA<17,2>, " deg" to Console;
 ]]></FreeFormScript>
       </FreeForm>
-      <FreeForm enabled="true">
+      <FreeForm enabled="false">
         <Label>FreeForm</Label>
         <Bookmarks />
         <Breakpoints />
@@ -1825,7 +1825,11 @@ SolView.ShowStatusText = 0;]]></FreeFormScript>
 
 While (InterplanetarySC.ElapsedTime < TimeSpan.FromDays(TOF));
 	Update SolView;
-	wo.Shapes[0].TextOptions.Text = InterplanetarySC.ElapsedTime.ToDays.Format("%3.0f");
+	//wo.Shapes[0].TextOptions.Text = InterplanetarySC.ElapsedTime.ToDays.Format("%3.0f");
+	Step InterplanetarySC;
+End;
+While(InterplanetarySC.ElapsedTime < TimeSpan.FromDays(50));
+	Update SolView;
 	Step InterplanetarySC;
 End;
 ]]></FreeFormScript>
@@ -2078,51 +2082,55 @@ Report "  RAAN: ", 				InterplanetarySC.RAAN<17,2>, " deg" to Console;
 Report "  W:    ", 				InterplanetarySC.W<17,2>, " deg" to Console;
 Report "  TA:   ", 				InterplanetarySC.TA<17,2>, " deg" to Console;
 
-WindowOverlay wo;
-wo.RemoveAllShapes();
-
-wo.AddShape();
-wo.Shapes[0].Type = "Text";
-wo.Shapes[0].SetSize(1,100, 25);
-wo.Shapes[0].ReferencePoint = {0, 0};
-wo.Shapes[0].SetPosition(1, 150,0);
-wo.Shapes[0].TextOptions.ShowBackdrop = 1;
-wo.Shapes[0].TextOptions.BackdropFillColor   = ColorTools.Black;
-wo.Shapes[0].TextOptions.BackdropFillOpacity = 1;
-wo.Shapes[0].TextOptions.BackdropBorderOpacity = 1;
-wo.Shapes[0].TextOptions.BackdropBorderColor = ColorTools.White;
-wo.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
-wo.Shapes[0].TextOptions.AlignmentHorizontal = 1;
-wo.Shapes[0].TextOptions.AlignmentVertical   = 1;
-wo.Shapes[0].TextOptions.Font.Bold = 1;
-wo.Shapes[0].TextOptions.Font.Size = 15;
-wo.Shapes[0].TextOptions.Text = "";
-
-wo.AddShape();
-wo.Shapes[1].Type = "Text";
-wo.Shapes[1].SetSize(1,150, 25);
-wo.Shapes[1].ReferencePoint = {0, 0};
-wo.Shapes[1].SetPosition(1, 0,0);
-wo.Shapes[1].TextOptions.ShowBackdrop = 1;
-wo.Shapes[1].TextOptions.BackdropFillColor   = ColorTools.Black;
-wo.Shapes[1].TextOptions.BackdropFillOpacity = 1;
-wo.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
-wo.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
-wo.Shapes[1].TextOptions.SetBackdropCornerRadius(1, 0);
-wo.Shapes[1].TextOptions.AlignmentHorizontal = 1;
-wo.Shapes[1].TextOptions.AlignmentVertical   = 1;
-wo.Shapes[1].TextOptions.Font.Bold = 1;
-wo.Shapes[1].TextOptions.Font.Size = 15;
-wo.Shapes[1].TextOptions.Text = "Time of Flight:";
-
-SolView.AddObject(wo);
-SolView.ShowStatusText = 0;
+// WindowOverlay wo;
+// wo.RemoveAllShapes();
+// 
+// wo.AddShape();
+// wo.Shapes[0].Type = "Text";
+// wo.Shapes[0].SetSize(1,100, 25);
+// wo.Shapes[0].ReferencePoint = {0, 0};
+// wo.Shapes[0].SetPosition(1, 150,0);
+// wo.Shapes[0].TextOptions.ShowBackdrop = 1;
+// wo.Shapes[0].TextOptions.BackdropFillColor   = ColorTools.Black;
+// wo.Shapes[0].TextOptions.BackdropFillOpacity = 1;
+// wo.Shapes[0].TextOptions.BackdropBorderOpacity = 1;
+// wo.Shapes[0].TextOptions.BackdropBorderColor = ColorTools.White;
+// wo.Shapes[0].TextOptions.SetBackdropCornerRadius(1, 0);
+// wo.Shapes[0].TextOptions.AlignmentHorizontal = 1;
+// wo.Shapes[0].TextOptions.AlignmentVertical   = 1;
+// wo.Shapes[0].TextOptions.Font.Bold = 1;
+// wo.Shapes[0].TextOptions.Font.Size = 15;
+// wo.Shapes[0].TextOptions.Text = "";
+// 
+// wo.AddShape();
+// wo.Shapes[1].Type = "Text";
+// wo.Shapes[1].SetSize(1,150, 25);
+// wo.Shapes[1].ReferencePoint = {0, 0};
+// wo.Shapes[1].SetPosition(1, 0,0);
+// wo.Shapes[1].TextOptions.ShowBackdrop = 1;
+// wo.Shapes[1].TextOptions.BackdropFillColor   = ColorTools.Black;
+// wo.Shapes[1].TextOptions.BackdropFillOpacity = 1;
+// wo.Shapes[1].TextOptions.BackdropBorderOpacity = 1;
+// wo.Shapes[1].TextOptions.BackdropBorderColor = ColorTools.White;
+// wo.Shapes[1].TextOptions.SetBackdropCornerRadius(1, 0);
+// wo.Shapes[1].TextOptions.AlignmentHorizontal = 1;
+// wo.Shapes[1].TextOptions.AlignmentVertical   = 1;
+// wo.Shapes[1].TextOptions.Font.Bold = 1;
+// wo.Shapes[1].TextOptions.Font.Size = 15;
+// wo.Shapes[1].TextOptions.Text = "Time of Flight:";
+// 
+// SolView.AddObject(wo);
+// SolView.ShowStatusText = 0;
 
 // Step Spacecraft
 
 While (InterplanetarySC.ElapsedTime < TimeSpan.FromDays(TOF));
 	Update SolView;
-	wo.Shapes[0].TextOptions.Text = InterplanetarySC.ElapsedTime.ToDays.Format("%3.0f");
+	//wo.Shapes[0].TextOptions.Text = InterplanetarySC.ElapsedTime.ToDays.Format("%3.0f");
+	Step InterplanetarySC;
+End;
+While(InterplanetarySC.ElapsedTime < TimeSpan.FromDays(50));
+	Update SolView;
 	Step InterplanetarySC;
 End;
 ]]></ProjectScript>

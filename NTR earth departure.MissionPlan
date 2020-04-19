@@ -2144,7 +2144,7 @@
                   <ForceModel name="belt2Lower_ForceModel" isConstant="false" isGlobal="false">
                     <Name>belt2Lower_ForceModel</Name>
                     <GravitatingBodies>
-                      <CelestialObjects dim="(11)">
+                      <CelestialObjects dim="11">
                         <value>Mercury</value>
                         <value>Venus</value>
                         <value>Earth</value>
@@ -2725,7 +2725,7 @@
                   <ForceModel name="belt2upper_ForceModel" isConstant="false" isGlobal="false">
                     <Name>belt2upper_ForceModel</Name>
                     <GravitatingBodies>
-                      <CelestialObjects dim="(11)">
+                      <CelestialObjects dim="11">
                         <value>Mercury</value>
                         <value>Venus</value>
                         <value>Earth</value>
@@ -3195,7 +3195,7 @@
                       <ReferenceFrame>inertial</ReferenceFrame>
                       <Declination units="deg" displayed_units="deg">90</Declination>
                       <FieldOfView units="deg" displayed_units="deg">45.0</FieldOfView>
-                      <Radius units="km" displayed_units="km">30000.0</Radius>
+                      <Radius units="km" displayed_units="km">180000</Radius>
                       <RightAscension units="deg" displayed_units="deg">270.0</RightAscension>
                       <metadata dim="0" />
                     </ThreeDViewpointOptions>
@@ -3209,8 +3209,8 @@
         <UseLighting>true</UseLighting>
         <UseTextures>true</UseTextures>
         <ShowLogo>true</ShowLogo>
-        <LogoTextureFilename></LogoTextureFilename>
-        <ShowStatusText>true</ShowStatusText>
+        <LogoTextureFilename>C:\Users\qupec\Downloads\logo.png</LogoTextureFilename>
+        <ShowStatusText>false</ShowStatusText>
         <ShowTextBackdrops>true</ShowTextBackdrops>
         <AmbientColor>6710886</AmbientColor>
         <StatusTextColor>16777215</StatusTextColor>
@@ -3221,7 +3221,7 @@
             <Name>ViewWindow1_|StatusTextFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
-            <Size units="" displayed_units="">0.0</Size>
+            <Size units="" displayed_units="">0</Size>
             <Strikeout>false</Strikeout>
             <Typeface>Tahoma</Typeface>
             <Underline>false</Underline>
@@ -3233,14 +3233,14 @@
             <Name>ViewWindow1_|DefaultObjectLabelFont|</Name>
             <Bold>false</Bold>
             <Italic>false</Italic>
-            <Size units="" displayed_units="">20.0</Size>
+            <Size units="" displayed_units="">20</Size>
             <Strikeout>false</Strikeout>
             <Typeface>Tahoma</Typeface>
             <Underline>false</Underline>
             <metadata dim="0" />
           </ViewFont>
         </DefaultObjectLabelFont>
-        <Objects dim="17">
+        <Objects dim="13">
           <value>Mercury</value>
           <value>Venus</value>
           <value>Earth</value>
@@ -3254,12 +3254,8 @@
           <value>Sun</value>
           <value>Stars</value>
           <value>Spacecraft1</value>
-          <value>beltLower</value>
-          <value>beltUpper</value>
-          <value>belt2Lower</value>
-          <value>belt2upper</value>
         </Objects>
-        <ProjectionHeights units="km" displayed_units="km" dim="17">
+        <ProjectionHeights units="km" displayed_units="km" dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3272,17 +3268,9 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>800</value>
-          <value>800</value>
-          <value>800</value>
-          <value>800</value>
           <value>800</value>
         </ProjectionHeights>
-        <ShowObject dim="17">
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
+        <ShowObject dim="13">
           <value>1</value>
           <value>1</value>
           <value>1</value>
@@ -3297,8 +3285,7 @@
           <value>1</value>
           <value>1</value>
         </ShowObject>
-        <ShowBody dim="17">
-          <value>1</value>
+        <ShowBody dim="13">
           <value>1</value>
           <value>1</value>
           <value>1</value>
@@ -3312,11 +3299,8 @@
           <value>1</value>
           <value>1</value>
           <value>0</value>
-          <value>0</value>
-          <value>1</value>
-          <value>1</value>
         </ShowBody>
-        <ShowName dim="17">
+        <ShowName dim="13">
           <value>1</value>
           <value>1</value>
           <value>1</value>
@@ -3328,18 +3312,10 @@
           <value>1</value>
           <value>1</value>
           <value>1</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
           <value>0</value>
           <value>0</value>
         </ShowName>
-        <ShowGrid dim="17">
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
+        <ShowGrid dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3354,11 +3330,7 @@
           <value>0</value>
           <value>0</value>
         </ShowGrid>
-        <ShowAxes dim="17">
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
+        <ShowAxes dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3373,7 +3345,7 @@
           <value>0</value>
           <value>0</value>
         </ShowAxes>
-        <ShowHistory dim="17">
+        <ShowHistory dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3386,13 +3358,9 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
           <value>1</value>
         </ShowHistory>
-        <ShowIcon dim="17">
+        <ShowIcon dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3405,13 +3373,9 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
+          <value>1</value>
         </ShowIcon>
-        <IconImageFilename dim="17">
+        <IconImageFilename dim="13">
           <value></value>
           <value></value>
           <value></value>
@@ -3424,13 +3388,9 @@
           <value></value>
           <value></value>
           <value></value>
-          <value></value>
-          <value></value>
-          <value></value>
-          <value></value>
-          <value></value>
+          <value>C:\Users\qupec\Documents\Spring 2020\ENAE484\Mars-Short-Duration-Mission\Images\TransferVehicleAssemblyIcon.png</value>
         </IconImageFilename>
-        <IconSize units="pixel" displayed_units="pixel" dim="17">
+        <IconSize units="pixel" displayed_units="pixel" dim="13">
           <value>30.0</value>
           <value>30.0</value>
           <value>30.0</value>
@@ -3443,17 +3403,9 @@
           <value>30.0</value>
           <value>30.0</value>
           <value>30.0</value>
-          <value>30</value>
-          <value>30</value>
-          <value>30</value>
-          <value>30</value>
-          <value>30</value>
+          <value>100</value>
         </IconSize>
-        <IconDrawingMode dim="17">
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
+        <IconDrawingMode dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3468,11 +3420,7 @@
           <value>0</value>
           <value>0</value>
         </IconDrawingMode>
-        <IconColor dim="17">
-          <value>4294967295</value>
-          <value>4294967295</value>
-          <value>4294967295</value>
-          <value>4294967295</value>
+        <IconColor dim="13">
           <value>4294967295</value>
           <value>4294967295</value>
           <value>4294967295</value>
@@ -3487,11 +3435,7 @@
           <value>4294967295</value>
           <value>4294967295</value>
         </IconColor>
-        <StoreVelocity dim="17">
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
-          <value>0</value>
+        <StoreVelocity dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3506,11 +3450,7 @@
           <value>0</value>
           <value>0</value>
         </StoreVelocity>
-        <AxesScaleMode dim="17">
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
+        <AxesScaleMode dim="13">
           <value>1</value>
           <value>1</value>
           <value>1</value>
@@ -3525,7 +3465,7 @@
           <value>1</value>
           <value>1</value>
         </AxesScaleMode>
-        <AxesSize units="km" displayed_units="km" dim="17">
+        <AxesSize units="km" displayed_units="km" dim="13">
           <value>1.0</value>
           <value>1.0</value>
           <value>1.0</value>
@@ -3538,17 +3478,9 @@
           <value>1.0</value>
           <value>1.0</value>
           <value>1.0</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
           <value>1</value>
         </AxesSize>
-        <AxesScale units="" displayed_units="" dim="17">
-          <value>1.3</value>
-          <value>1.3</value>
-          <value>1.3</value>
-          <value>1.3</value>
+        <AxesScale units="" displayed_units="" dim="13">
           <value>1.3</value>
           <value>1.3</value>
           <value>1.3</value>
@@ -3563,7 +3495,7 @@
           <value>1.3</value>
           <value>1.3</value>
         </AxesScale>
-        <TailLength units="" displayed_units="" dim="17">
+        <TailLength units="" displayed_units="" dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3576,13 +3508,9 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>100</value>
-          <value>100</value>
-          <value>100</value>
-          <value>100</value>
           <value>100</value>
         </TailLength>
-        <HistoryMode units="" displayed_units="" dim="17">
+        <HistoryMode units="" displayed_units="" dim="13">
           <value>0</value>
           <value>0</value>
           <value>0</value>
@@ -3595,17 +3523,9 @@
           <value>0</value>
           <value>0</value>
           <value>0</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
           <value>1</value>
         </HistoryMode>
-        <CurrentTailState units="" displayed_units="" dim="17">
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
+        <CurrentTailState units="" displayed_units="" dim="13">
           <value>1</value>
           <value>1</value>
           <value>1</value>
@@ -3620,11 +3540,7 @@
           <value>1</value>
           <value>1</value>
         </CurrentTailState>
-        <LineWidthUnits units="" displayed_units="" dim="17">
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
+        <LineWidthUnits units="" displayed_units="" dim="13">
           <value>1</value>
           <value>1</value>
           <value>1</value>
@@ -3639,7 +3555,7 @@
           <value>1</value>
           <value>1</value>
         </LineWidthUnits>
-        <LineWidths units="" displayed_units="" dim="17">
+        <LineWidths units="" displayed_units="" dim="13">
           <value>1.0</value>
           <value>1.0</value>
           <value>1.0</value>
@@ -3652,17 +3568,9 @@
           <value>1.0</value>
           <value>1.0</value>
           <value>1.0</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
-          <value>1</value>
           <value>1</value>
         </LineWidths>
-        <LabelFonts dim="17">
-          <value xsi:nil="true" />
-          <value xsi:nil="true" />
-          <value xsi:nil="true" />
-          <value xsi:nil="true" />
+        <LabelFonts dim="13">
           <value xsi:nil="true" />
           <value xsi:nil="true" />
           <value xsi:nil="true" />
@@ -3685,12 +3593,6 @@
   <ProjectMissionSequence>
     <ProjectExternals />
     <ProjectCommands>
-      <FreeForm enabled="true">
-        <Label>FreeForm</Label>
-        <Bookmarks />
-        <Breakpoints />
-        <FreeFormScript><![CDATA[]]></FreeFormScript>
-      </FreeForm>
       <FreeForm enabled="true">
         <Label>FreeForm</Label>
         <Bookmarks />
@@ -3718,13 +3620,15 @@ Variable inBelt2 = 0;
 Variable beltStartTime;
 Variable beltEndTime;
 Variable totalBeltTime = 0;
+Variable DropMass = 414000;
+Variable stage_count = 1;
 
 beltLower.Color = ColorTools.Cyan;
 beltUpper.Color = ColorTools.Cyan;
 
 belt2Lower.Color = ColorTools.Magenta;
 belt2upper.Color = ColorTools.Magenta;
-
+ViewWindow1.ShowStatusText = 0;
 While (Spacecraft1.VMag <= finalV);
 	
 	Try;
@@ -3746,6 +3650,12 @@ While (Spacecraft1.VMag <= finalV);
 	
 	While (Spacecraft1.TA < 356 and Spacecraft1.TA > 4);
 		Spacecraft1.Color = ColorTools.Red;
+		If (Spacecraft1.MassTotal <= DropMass - 60000);
+			Spacecraft1.MassTotal = Spacecraft1.MassTotal - 4300*2;
+			DropMass = Spacecraft1.MassTotal;
+			stage_count = stage_count + 1;
+			Report(stage_count);
+		End;
 		Step Spacecraft1;
 		Step beltLower to (beltLower.Epoch == Spacecraft1.Epoch);
 		Step beltUpper to (beltUpper.Epoch == Spacecraft1.Epoch);
@@ -3785,15 +3695,18 @@ While (Spacecraft1.VMag <= finalV);
 	If ((Spacecraft1.VMag^2/2) > (Earth.Mu/(Spacecraft1.Range(Earth))));
 			
 			Break;
-		End;
+	End;
 		
+End;
+While (Spacecraft1.ElapsedTime < TimeSpan.FromDays(.5));
+	Step Spacecraft1;
+	Update ViewWindow1;
 End;
 ]]></FreeFormScript>
       </FreeForm>
     </ProjectCommands>
   </ProjectMissionSequence>
-  <ProjectScript><![CDATA[
-// 3.8 km/s
+  <ProjectScript><![CDATA[// 3.8 km/s
 
 Variable finalV = 11.58;
 FiniteBurn1.BurnDuration = TimeSpan.FromMinutes(9); //8
@@ -3816,13 +3729,15 @@ Variable inBelt2 = 0;
 Variable beltStartTime;
 Variable beltEndTime;
 Variable totalBeltTime = 0;
+Variable DropMass = 414000;
+Variable stage_count = 1;
 
 beltLower.Color = ColorTools.Cyan;
 beltUpper.Color = ColorTools.Cyan;
 
 belt2Lower.Color = ColorTools.Magenta;
 belt2upper.Color = ColorTools.Magenta;
-
+ViewWindow1.ShowStatusText = 0;
 While (Spacecraft1.VMag <= finalV);
 	
 	Try;
@@ -3844,6 +3759,12 @@ While (Spacecraft1.VMag <= finalV);
 	
 	While (Spacecraft1.TA < 356 and Spacecraft1.TA > 4);
 		Spacecraft1.Color = ColorTools.Red;
+		If (Spacecraft1.MassTotal <= DropMass - 60000);
+			Spacecraft1.MassTotal = Spacecraft1.MassTotal - 4300*2;
+			DropMass = Spacecraft1.MassTotal;
+			stage_count = stage_count + 1;
+			Report(stage_count);
+		End;
 		Step Spacecraft1;
 		Step beltLower to (beltLower.Epoch == Spacecraft1.Epoch);
 		Step beltUpper to (beltUpper.Epoch == Spacecraft1.Epoch);
@@ -3883,8 +3804,12 @@ While (Spacecraft1.VMag <= finalV);
 	If ((Spacecraft1.VMag^2/2) > (Earth.Mu/(Spacecraft1.Range(Earth))));
 			
 			Break;
-		End;
+	End;
 		
+End;
+While (Spacecraft1.ElapsedTime < TimeSpan.FromDays(.5));
+	Step Spacecraft1;
+	Update ViewWindow1;
 End;
 ]]></ProjectScript>
   <ProjectNotes></ProjectNotes>
