@@ -1,0 +1,12 @@
+
+CAD/DVe 2/DVeStructure_fem1_i.prt
+CAD/DVe 2/DVeStructure_sim1.sim
+*.fem
+*.op2
+*.f04
+*.f06
+*.log
+*.sim
+*.dat
+*.diag
+*.png
