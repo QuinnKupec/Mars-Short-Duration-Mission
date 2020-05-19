@@ -3,7 +3,7 @@
   <ProjectInformation>
     <Author />
     <Source />
-    <FreeFlyerVersion>7.5.0.53570</FreeFlyerVersion>
+    <FreeFlyerVersion>7.5.1.53911</FreeFlyerVersion>
     <RevisionNumber />
     <Title>Lambert Transfer Calculation</Title>
     <Subject />
@@ -694,7 +694,7 @@
     <Object>
       <Variable name="TOF" isConstant="false" isGlobal="false">
         <Name>TOF</Name>
-        <Value units="" displayed_units="">0</Value>
+        <Value units="" displayed_units="">258</Value>
         <metadata dim="0" />
       </Variable>
     </Object>
